@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>pass</title>
+    <style>
+
+.text{
+    font-size: 20px;
+     color: #fcf2ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body  {
+    background-image: url("http://127.0.0.1:5000/static/bg10.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+      table {
+           border-collapse: collapse;
+           width: 100%;
+          font-size: 16px;
+     color: #fcf2ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th{
+  padding: 8px;
+  text-align: left;
+    text-decoration-color:#f7f9ee;
+  border-bottom: 1px solid #ddd;
+}
+
+td{
+  padding: 8px;
+  text-align: left;
+    text-decoration-color:#f7f9ee;
+  border-bottom: 1px solid #ddd;
+}
+
+.text{
+    font-size: 16px;
+    color: #ffdaed;
+    font-family: Arial, Helvetica, sans-serif;
+    left:32%;
+    text-align: justify;
+}
+.container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(211, 90, 194, 0.5);
+
+    }
+.center{
+margin-left: 33%;
+}
+.center1{
+margin-left: 10%;
+}
+table, th{
+  border: none;
+}
+.divc {
+
+  padding: 20px 40px;
+  height: 290px;
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left:32%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+th{
+
+  border-bottom: 1px solid #ddd;
+}
+    </style>
+</head>
+<body>
+
+<img class="center" src="http://127.0.0.1:5000/static/text1.png">
+<img class="center1" src="http://127.0.0.1:5000/static/smoke8.png" style= "width: 1000px">
+<div class="divc">
+    <br><br><br><br>
+<p class="text">&nbsp&nbsp&nbspYour Song : {{song}}  |  Your Rating : {{rating}}</p>
+<p class="text">&nbsp&nbsp&nbspSongs for Your Choice</p>
+<div class="container">{{a | safe}}</div>
+<p class="text">&nbsp&nbsp&nbspSongs Liked by Similar Users</p>
+<div class="container">{{b | safe}}</div>
+</div>
+</body>
+</html>
